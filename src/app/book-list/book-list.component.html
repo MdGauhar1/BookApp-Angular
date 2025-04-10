@@ -1,0 +1,16 @@
+<div class="container">
+    <h2 class="title">📚 Book List</h2>
+  
+    <div *ngIf="books.length > 0; else noBooks" class="book-list">
+      <div *ngFor="let book of books" class="book-card">
+        <p><span class="label">ID:</span> {{ book.id }}</p>
+        <p><span class="label">Title:</span> {{ book.title }}</p>
+        <p><span class="label">Author:</span> {{ book.author }}</p>
+      </div>
+    </div>
+  
+    <ng-template #noBooks>
+      <p class="no-books">No books available.</p>
+    </ng-template>
+  </div>
+  
