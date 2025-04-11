@@ -1,1 +1,13 @@
-<p>add-book works!</p>
+<div class="form-container">
+    <h2>Add New Book</h2>
+    <form (ngSubmit)="onSubmit()">
+      <label for="title">Title:</label>
+      <input id="title" name="title" [(ngModel)]="book.title" required />
+  
+      <label for="author">Author:</label>
+      <input id="author" name="author" [(ngModel)]="book.author" required />
+  
+      <button type="submit">Save Book</button>
+    </form>
+  </div>
+  
