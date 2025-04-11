@@ -23,5 +23,14 @@ export class BookService {
   deleteBook(id: number) {
     return this.http.delete(`http://localhost:8080/api/books/${id}`);
   }
+
+  searchByTitle(title: string) {
+    return this.http.get<Book[]>(`http://localhost:8080/api/books/by-title?title=${title}`);
+  }
+  
+  searchByAuthor(author: string) {
+    return this.http.get<Book[]>(`http://localhost:8080/api/books/by-author?author=${author}`);
+  }
+  
   
 }

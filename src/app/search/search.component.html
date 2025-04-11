@@ -1,0 +1,25 @@
+<div class="container">
+    <h2 class="title">🔍 Search Book</h2>
+  
+    <div class="search-box">
+      <select [(ngModel)]="searchType">
+        <option value="title">Search by Title</option>
+        <option value="author">Search by Author</option>
+      </select>
+      <input [(ngModel)]="query" placeholder="Enter search term..." />
+      <button (click)="search()">Search</button>
+    </div>
+  
+    <div *ngIf="books.length > 0; else noResults" class="book-list">
+      <div class="book-card" *ngFor="let book of books">
+        <p><span class="label">ID:</span> {{ book.id }}</p>
+        <p><span class="label">Title:</span> {{ book.title }}</p>
+        <p><span class="label">Author:</span> {{ book.author }}</p>
+      </div>
+    </div>
+  
+    <ng-template #noResults>
+      <p class="no-books">No books found.</p>
+    </ng-template>
+  </div>
+  
