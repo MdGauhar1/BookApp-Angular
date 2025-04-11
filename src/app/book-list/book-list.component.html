@@ -6,6 +6,7 @@
         <p><span class="label">ID:</span> {{ book.id }}</p>
         <p><span class="label">Title:</span> {{ book.title }}</p>
         <p><span class="label">Author:</span> {{ book.author }}</p>
+        <button class="delete-btn" (click)="deleteBook(book.id)">Delete</button>
       </div>
     </div>
   
