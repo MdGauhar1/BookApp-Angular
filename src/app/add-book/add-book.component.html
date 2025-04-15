@@ -9,7 +9,7 @@
       <input id="author" name="author" [(ngModel)]="book.author" required />
   
       <label for="file">Choose File:</label>
-      <input id="file" type="file" (change)="onFileChange($event)" required />
+      <input id="file"  type="file"  style="background-color: white;" (change)="onFileChange($event)" required />
   
       <button type="submit">Save Book</button>
     </form>
