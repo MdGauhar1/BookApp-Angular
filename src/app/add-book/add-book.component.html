@@ -1,11 +1,15 @@
-<div class="form-container">
+
+   <div class="form-container">
     <h2>Add New Book</h2>
-    <form (ngSubmit)="onSubmit()">
+    <form (ngSubmit)="onSubmit()" enctype="multipart/form-data">
       <label for="title">Title:</label>
       <input id="title" name="title" [(ngModel)]="book.title" required />
   
       <label for="author">Author:</label>
       <input id="author" name="author" [(ngModel)]="book.author" required />
+  
+      <label for="file">Choose File:</label>
+      <input id="file" type="file" (change)="onFileChange($event)" required />
   
       <button type="submit">Save Book</button>
     </form>
