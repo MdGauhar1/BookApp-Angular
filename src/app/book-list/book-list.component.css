@@ -55,8 +55,8 @@
   background-color: #dc3545;
   color: #fff;
   border: none;
-  padding: 6px 12px;
-  font-size: 24px;
+  padding: 12px 24.5px;
+  font-size: 15px;
   border-radius: 6px;
   cursor: pointer;
   transition: background-color 0.3s ease;
@@ -64,4 +64,22 @@
 
 .delete-btn:hover {
   background-color: #c82333;
+}
+
+.download-btn {
+  position: absolute;
+  bottom: 12px;
+  right: 16px;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  padding: 12px 12px;
+  font-size: 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.download-btn:hover {
+  background-color: #218838;
 }

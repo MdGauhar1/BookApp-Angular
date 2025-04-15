@@ -2,6 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { BookService } from '../services/book.service';
 import { Book } from '../models/book.model';
+import { HttpClient } from '@angular/common/http';
+
+
 
 @Component({
   selector: 'app-book-list',
@@ -13,7 +16,9 @@ import { Book } from '../models/book.model';
 export class BookListComponent implements OnInit {
   books: Book[] = [];
 
-  constructor(private bookService: BookService) {}
+  // constructor(private bookService: BookService) {}
+  constructor(private bookService: BookService, private http: HttpClient) {}
+
 
   ngOnInit(): void {
     this.loadBooks();
@@ -32,5 +37,18 @@ export class BookListComponent implements OnInit {
         this.loadBooks(); // Refresh list
       });
     }
+  }
+
+  downloadBook(id: number, title: string): void {
+    this.http.get(`http://localhost:8080/api/books/download/${id}`, {
+      responseType: 'blob',
+    }).subscribe(blob => {
+      const url = window.URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = `${title}.pdf`;
+      a.click();
+      window.URL.revokeObjectURL(url);
+    });
   }
 }
