@@ -1,43 +1,92 @@
 .welcome-container {
-    text-align: center;
-    padding: 60px 20px;
-    background: linear-gradient(to right, #bbdaf1, #bbdefb);
-    border-radius: 12px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-    margin: 120px auto;
-    max-width: 800px;
+  text-align: center;
+  padding: 60px 20px;
+  background: linear-gradient(to right, #bbdaf1, #bbdefb);
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  margin: 100px auto;
+  max-width: 800px;
+  box-sizing: border-box;
+}
+
+.main-heading {
+  font-size: 3rem;
+  color: #0f66bd;
+  margin-bottom: 10px;
+}
+
+.sub-heading {
+  font-size: 1.3rem;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.btn-group {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  text-decoration: none;
+  padding: 12px 24px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  background-color: #0f66bd;
+  color: white;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #084c91;
+}
+
+/* ✅ Responsive Media Queries */
+@media (max-width: 768px) {
+  .welcome-container {
+    padding: 40px 16px;
+    margin: 80px auto;
   }
-  
+
   .main-heading {
-    font-size: 3rem;
-    color: #0f66bd;
-    margin-bottom: 10px;
+    font-size: 2.2rem;
   }
-  
+
   .sub-heading {
-    font-size: 1.3rem;
-    color: #333;
-    margin-bottom: 30px;
-  }
-  
-  .btn-group {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-  }
-  
-  .btn {
-    text-decoration: none;
-    padding: 12px 24px;
     font-size: 1.1rem;
-    font-weight: bold;
-    background-color: #0f66bd;
-    color: white;
-    border-radius: 8px;
-    transition: background-color 0.3s ease;
   }
-  
-  .btn:hover {
-    background-color: #084c91;
+
+  .btn {
+    padding: 10px 20px;
+    font-size: 1rem;
   }
-  
+}
+
+@media (max-width: 480px) {
+  .welcome-container {
+    padding: 30px 12px;
+    margin: 60px 15px;
+    width: 95%;
+  }
+
+  .main-heading {
+    font-size: 1.8rem;
+  }
+
+  .sub-heading {
+    font-size: 1rem;
+  }
+
+  .btn-group {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .btn {
+    width: 100%;
+    font-size: 0.95rem;
+    padding: 10px 0;
+  }
+}

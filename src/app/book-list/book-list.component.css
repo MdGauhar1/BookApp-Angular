@@ -1,10 +1,12 @@
 .container {
   max-width: 800px;
+  width: 90%;
   margin: 70px auto;
   padding: 20px;
   background: #c4daf0;
   border-radius: 12px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
 }
 
 .title {
@@ -50,7 +52,6 @@
   color: #888;
 }
 
-/* 👇 New Delete Button Style */
 .delete-btn {
   position: absolute;
   top: 12px;
@@ -85,4 +86,50 @@
 
 .download-btn:hover {
   background-color: #218838;
+}
+
+/* ✅ Responsive Media Queries */
+@media (max-width: 768px) {
+  .container {
+    padding: 16px;
+    margin: 50px auto;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+
+  .book-card {
+    font-size: 18px;
+    padding: 14px 20px;
+  }
+
+  .delete-btn,
+  .download-btn {
+    padding: 10px 16px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 12px;
+    margin: 40px 15px;
+    width: 95%;
+  }
+
+  .title {
+    font-size: 20px;
+  }
+
+  .book-card {
+    font-size: 16px;
+    padding: 12px 16px;
+  }
+
+  .delete-btn,
+  .download-btn {
+    padding: 8px 12px;
+    font-size: 13px;
+  }
 }
