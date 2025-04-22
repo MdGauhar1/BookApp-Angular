@@ -1,4 +1,4 @@
-<h2>Get Reviews</h2>
+<!-- <h2>Get Reviews</h2>
 <input [(ngModel)]="bookId" placeholder="Book ID">
 <button (click)="fetchReviews()">Get</button>
 
@@ -6,4 +6,18 @@
   <p>⭐ {{ r.stars }}</p>
   <p>{{ r.comment }}</p>
   <hr>
-</div>
+</div> -->
+
+<div class="get-reviews-container">
+    <h2>Get Reviews</h2>
+  
+    <input [(ngModel)]="bookId" placeholder="Book ID" class="form-input" />
+    <button (click)="fetchReviews()" class="submit-button">Get</button>
+  
+    <div *ngFor="let r of reviews" class="review-card">
+      <p class="stars">⭐ {{ r.stars }}</p>
+      <p class="comment">{{ r.comment }}</p>
+      <hr>
+    </div>
+  </div>
+  

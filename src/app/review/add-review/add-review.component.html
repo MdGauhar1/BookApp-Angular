@@ -1,5 +1,15 @@
-<h2>Add Review</h2>
+<!-- <h2>Add Review</h2>
 <input [(ngModel)]="bookId" placeholder="Book ID">
 <input type="number" [(ngModel)]="review.stars" placeholder="Stars">
 <textarea [(ngModel)]="review.comment" placeholder="Comment"></textarea>
-<button (click)="submitReview()">Submit</button>
+<button (click)="submitReview()">Submit</button> -->
+
+
+<div class="add-review-container">
+    <h2>Add Review</h2>
+    <input [(ngModel)]="bookId" placeholder="Book ID" class="form-input" />
+    <input type="number" [(ngModel)]="review.stars" placeholder="Stars" class="form-input" />
+    <textarea [(ngModel)]="review.comment" placeholder="Comment" class="form-textarea"></textarea>
+    <button (click)="submitReview()" class="submit-button">Submit</button>
+  </div>
+  
