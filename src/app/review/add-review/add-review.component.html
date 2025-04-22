@@ -1,0 +1,5 @@
+<h2>Add Review</h2>
+<input [(ngModel)]="bookId" placeholder="Book ID">
+<input type="number" [(ngModel)]="review.stars" placeholder="Stars">
+<textarea [(ngModel)]="review.comment" placeholder="Comment"></textarea>
+<button (click)="submitReview()">Submit</button>

@@ -1,0 +1,9 @@
+<h2>Get Reviews</h2>
+<input [(ngModel)]="bookId" placeholder="Book ID">
+<button (click)="fetchReviews()">Get</button>
+
+<div *ngFor="let r of reviews">
+  <p>⭐ {{ r.stars }}</p>
+  <p>{{ r.comment }}</p>
+  <hr>
+</div>

@@ -9,12 +9,16 @@ import { AppComponent } from './app.component';
 import { AddBookComponent } from './add-book/add-book.component';
 import { BookListComponent } from './book-list/book-list.component';
 import { CommonModule } from '@angular/common';
+import { AddReviewComponent } from './review/add-review/add-review.component';
+import { GetReviewComponent } from './review/get-review/get-review.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AddBookComponent,
-    BookListComponent
+    BookListComponent,
+    AddReviewComponent,
+    GetReviewComponent
   ],
   imports: [
     BrowserModule,
