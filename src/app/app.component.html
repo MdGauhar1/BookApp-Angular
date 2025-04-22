@@ -1,12 +1,12 @@
 
 <nav class="container">
   <ul class="navbar">
-    <li><a routerLink="home" routerLinkActive="active">🏠 Home </a></li>
-    <li><a routerLink="add-book" routerLinkActive="active">➕ Add Book</a></li>
-    <li><a routerLink="book-list" routerLinkActive="active">📋 Book List</a></li>
-    <li><a routerLink="/search" class="nav-link">🔍 Search Book</a></li>
+    <li><a routerLink="home" routerLinkActive="active">Home</a></li>
+    <li><a routerLink="add-book" routerLinkActive="active">Add Book</a></li>
+    <li><a routerLink="book-list" routerLinkActive="active">Book List</a></li>
+    <li><a routerLink="/search" class="nav-link">Search Book</a></li>
     <li class="dropdown" (click)="toggleReviewDropdown()" [class.open]="isReviewDropdownOpen">
-      <a href="javascript:void(0)">📝 Review ▼</a>
+      <a href="javascript:void(0)">Review ▼</a>
       <ul class="dropdown-content" *ngIf="isReviewDropdownOpen">
         <li><a routerLink="/review/add" routerLinkActive="active">➕ Add Review</a></li>
         <li><a routerLink="/review/get" routerLinkActive="active">📥 Get Reviews</a></li>
