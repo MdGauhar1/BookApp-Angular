@@ -10,6 +10,10 @@
   
       <label for="file">Choose File:</label>
       <input id="file"  type="file"  style="background-color: white;" (change)="onFileChange($event)" required />
+
+      <label for="image">Choose Image:</label>
+      <input id="image" type="file" style="background-color: white;" (change)="onImageChange($event)" required />
+
   
       <button type="submit">Save Book</button>
     </form>

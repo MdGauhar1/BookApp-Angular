@@ -4,6 +4,6 @@ export interface Book {
     title: string;
     author: string;
     file?: File;
-
+    imageBase64?: string;
   }
   

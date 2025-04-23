@@ -32,16 +32,32 @@ export class BookService {
     return this.http.get<Book[]>(`http://localhost:8080/api/books/by-author?author=${author}`);
   }
 
-  addBookWithFile(book: Book, file: File) {
+  // addBookWithFile(book: Book, file: File) {
+  //   const formData = new FormData();
+  //   formData.append('title', book.title);
+  //   formData.append('author', book.author);
+  //   formData.append('file', file);
+  
+  //   return this.http.post('http://localhost:8080/api/books/upload', formData, {
+  //     responseType: 'text' as 'json'
+  //   });
+  // }
+
+
+  addBookWithFileAndImage(book: Book, file: File, image?: File) {
     const formData = new FormData();
     formData.append('title', book.title);
     formData.append('author', book.author);
     formData.append('file', file);
+    if (image) {
+      formData.append('image', image);
+    }
   
     return this.http.post('http://localhost:8080/api/books/upload', formData, {
       responseType: 'text' as 'json'
     });
   }
+  
   
   
 }
