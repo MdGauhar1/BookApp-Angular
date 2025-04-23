@@ -13,11 +13,11 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./search.component.css']
 })
 export class SearchComponent {
-  searchType: string = 'title'; // or 'author'
+  searchType: string = 'title';
   query: string = '';
   books: Book[] = [];
 
-  //constructor(private bookService: BookService) {}
+  
   constructor(private bookService: BookService, private http: HttpClient) {}
 
 

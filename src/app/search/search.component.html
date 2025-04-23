@@ -12,6 +12,10 @@
   
     <div *ngIf="books.length > 0; else noResults" class="book-list">
       <div class="book-card" *ngFor="let book of books">
+        <p><img *ngIf="book.imageBase64"
+          [src]="'data:image/jpeg;base64,' + book.imageBase64"
+          alt="Book Cover"
+          class="book-image" /></p>
         <p><span class="label">ID:</span> {{ book.id }}</p>
         <p><span class="label">Title:</span> {{ book.title }}</p>
         <p><span class="label">Author:</span> {{ book.author }}</p>
