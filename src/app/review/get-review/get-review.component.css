@@ -3,7 +3,7 @@
     max-width: 600px;
     margin: 80px auto;
     padding: 30px;
-    background-color: #c4daf0;
+    background-color: #e48181;
     border: 1px solid #ccc;
     border-radius: 12px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -13,7 +13,7 @@
   /* Heading */
   .get-reviews-container h2 {
     text-align: center;
-    color: #0f66bd;
+    color: #bd0f0f;
     margin-bottom: 25px;
   }
   
@@ -34,7 +34,7 @@
     width: 90px;
     padding: 10px;
     margin-left: 10px;
-    background-color: #4482c0;
+    background-color: #ad0d0d;
     color: white;
     font-weight: bold;
     font-size: 16px;
@@ -45,13 +45,13 @@
   }
   
   .submit-button:hover {
-    background-color: #084c91;
+    background-color: #f80202;
   }
   
   /* Review Card */
   .review-card {
     background-color: #f8f8f8;
-    border-left: 4px solid #4482c0;
+    border-left: 4px solid #af0e0e;
     padding: 15px;
     margin-top: 15px;
     border-radius: 8px;

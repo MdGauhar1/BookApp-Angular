@@ -2,7 +2,7 @@
   max-width: 1000px;
   margin: 90px auto;
   padding: 20px;
-  background: #c4daf0;
+  background-color: #e48181;
   border-radius: 12px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
@@ -10,7 +10,7 @@
 
 .title {
   text-align: center;
-  color: #0f66bd;
+  color: #b30e0e;
   font-size: 28px;
   margin-bottom: 30px;
   font-weight: 700;
@@ -36,7 +36,7 @@
 }
 
 .search-box button {
-  background-color: #0f66bd;
+  background-color: #9b0b0b;
   color: #fff;
   border: none;
   padding: 10px 20px;
@@ -47,7 +47,7 @@
 }
 
 .search-box button:hover {
-  background-color: #084c91;
+  background-color: #ff0000;
 }
 
 .book-list {
@@ -62,7 +62,7 @@
   align-items: center;
   background-color: #ffffff;
   padding: 16px 24px;
-  border-left: 6px solid #0f66bd;
+  border-left: 6px solid #a50d0d;
   border-radius: 10px;
   transition: transform 0.3s, box-shadow 0.3s;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
@@ -93,7 +93,7 @@
 .no-books {
   text-align: center;
   font-size: 18px;
-  color: #888;
+  color: #fff7f7;
 }
 
 .delete-btn {

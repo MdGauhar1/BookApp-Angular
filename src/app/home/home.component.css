@@ -1,7 +1,7 @@
 .welcome-container {
   text-align: center;
   padding: 60px 20px;
-  background: linear-gradient(to right, #bbdaf1, #bbdefb);
+  background: linear-gradient(to right, #e4a5a5, #e46d6d);
   border-radius: 12px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
   margin: 100px auto;
@@ -11,7 +11,7 @@
 
 .main-heading {
   font-size: 3rem;
-  color: #0f66bd;
+  color: #8d0707;
   margin-bottom: 10px;
 }
 
@@ -33,14 +33,14 @@
   padding: 12px 24px;
   font-size: 1.1rem;
   font-weight: bold;
-  background-color: #0f66bd;
+  background-color: #8f0404;
   color: white;
   border-radius: 8px;
   transition: background-color 0.3s ease;
 }
 
 .btn:hover {
-  background-color: #084c91;
+  background-color: #ff0101;
 }
 
 /* ✅ Responsive Media Queries */

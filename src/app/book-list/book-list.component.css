@@ -3,7 +3,7 @@
   width: 90%;
   margin: 85px auto;
   padding: 20px;
-  background: #c4daf0;
+  background: #e48181;
   border-radius: 12px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
@@ -11,7 +11,7 @@
 
 .title {
   text-align: center;
-  color: #0f66bd;
+  color: #a80c0c;
   font-size: 28px;
   margin-bottom: 30px;
   font-weight: 700;
@@ -26,7 +26,7 @@
 .book-card {
   background-color: #ffffff;
   padding: 16px 24px;
-  border-left: 6px solid #0f66bd;
+  border-left: 6px solid #ac0909;
   border-radius: 10px;
   transition: transform 0.3s, box-shadow 0.3s;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
@@ -43,7 +43,7 @@
 
 .label {
   font-weight: 600;
-  color: #0f66bd;
+  color: #851818;
 }
 
 .no-books {
