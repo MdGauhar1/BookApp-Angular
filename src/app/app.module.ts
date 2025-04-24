@@ -11,6 +11,7 @@ import { BookListComponent } from './book-list/book-list.component';
 import { CommonModule } from '@angular/common';
 import { AddReviewComponent } from './review/add-review/add-review.component';
 import { GetReviewComponent } from './review/get-review/get-review.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { GetReviewComponent } from './review/get-review/get-review.component';
     AddBookComponent,
     BookListComponent,
     AddReviewComponent,
-    GetReviewComponent
+    GetReviewComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
@@ -30,6 +32,7 @@ import { GetReviewComponent } from './review/get-review/get-review.component';
     FormsModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  exports: [HomeComponent]
 })
 export class AppModule { }

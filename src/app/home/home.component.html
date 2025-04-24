@@ -6,7 +6,25 @@
       <a routerLink="/add-book" routerLinkActive="active" class="btn">➕ Add Book</a>
       <a routerLink="/book-list" routerLinkActive="active" class="btn">📖 View Books</a>
     </div>
+</div>
+
+<!-- Home Page Section with Book Cards -->
+<div class="home">
+  <h2>Most Famous Books</h2>
+  <div class="book-cards">
+    <div class="book-card" *ngFor="let book of books">
+      <img [src]="book.imageUrl" alt="{{ book.title }} Cover" class="book-card-img" />
+      <div class="book-card-body">
+        <h3 class="book-title">{{ book.title }}</h3>
+        <p class="book-author">By {{ book.author }}</p>
+        <p class="book-description">{{ book.description }}</p>
+      </div>
+    </div>
   </div>
+</div>
+
+
+
   
 
   
