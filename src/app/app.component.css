@@ -9,7 +9,6 @@ html, body {
 }
 
 .container {
-  background-image: url('/assets/o.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
