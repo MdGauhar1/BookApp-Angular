@@ -1,19 +1,21 @@
+
 .welcome-container {
   text-align: center;
-  padding: 80px;
+  padding: 40px; /* reduced padding */
   background: linear-gradient(to right, #e4a5a5, #e46d6d);
   border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-  margin: 150px auto 100px;
-  max-width: 1400px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* softer shadow */
+  margin: 80px auto 50px; /* less margin */
+  max-width: 1000px; /* smaller width */
   box-sizing: border-box;
 }
 
 .main-heading {
-  font-size: 5rem;
+  font-size: 3rem; /* reduced font size */
   color: #8d0707;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
+
 
 .sub-heading {
   font-size: 2rem;
