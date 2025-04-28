@@ -91,20 +91,6 @@
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .famous-books {
   padding: 80px 30px 50px;
   background-color: #fff8f0;
@@ -119,9 +105,7 @@
   margin-top: 20px;
 }
 
-
-
-
+/* Home Section */
 .home {
   text-align: center;
   padding: 20px;
@@ -143,6 +127,7 @@
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
+  position: relative;
   background-color: white;
   transition: transform 0.3s;
 }
@@ -155,17 +140,25 @@
   width: 100%;
   height: 250px;
   object-fit: cover;
+  background-size: cover;
+  background-position: center;
 }
 
 .book-card-body {
-  padding: 10px;
-  margin: 20px;
+  padding: 0px;
+  position: absolute; /* Position the text container over the image */
+  bottom: 0; /* Place the text at the bottom of the card */
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background for text readability */
+  color: white; /* White text for visibility */
+  border-radius: 0 0 10px 10px; /* Rounded corners at the bottom */
 }
 
 .book-title {
   font-size: 1.2em;
   font-weight: bold;
   margin: 10px 0;
+  text-align: center;
 }
 
 .book-author {
@@ -174,11 +167,5 @@
 
 .book-description {
   font-size: 0.9em;
-  color: #333;
+  color: #ddd;
 }
-
-
-
-
-
-

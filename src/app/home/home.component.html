@@ -13,7 +13,7 @@
   <h2>Most Famous Books</h2>
   <div class="book-cards">
     <div class="book-card" *ngFor="let book of books">
-      <img [src]="book.imageUrl" alt="{{ book.title }} Cover" class="book-card-img" />
+      <div class="book-card-img" [style.backgroundImage]="'url(' + book.imageUrl + ')'"></div>
       <div class="book-card-body">
         <h3 class="book-title">{{ book.title }}</h3>
         <p class="book-author">By {{ book.author }}</p>
