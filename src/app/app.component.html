@@ -1,22 +1,35 @@
 <nav class="container" style="background-image: url(assets/o.jpg);">
   <ul class="navbar">
-    <div class="logo">
-      <img src="assets/e.png" alt="Logo" />
+    <div class="navbar-wrapper">
+
+      <div class="logo">
+        <img src="assets/e.png" alt="Logo" />
+      </div>
+
+      <!-- Hamburger Icon -->
+      <div class="hamburger" (click)="toggleMobileMenu()">☰</div>
+
+      <!-- Navbar Links -->
+      <div [ngClass]="{ 'nav-links': true, 'active': isMobileMenuOpen }">
+        <li><a routerLink="home" routerLinkActive="active">Home</a></li>
+        <li><a routerLink="add-book" routerLinkActive="active">Add Book</a></li>
+        <li><a routerLink="book-list" routerLinkActive="active">Book List</a></li>
+        <li><a routerLink="/search" class="nav-link">Search Book</a></li>
+
+        <li class="dropdown" (click)="toggleReviewDropdown()" [class.open]="isReviewDropdownOpen">
+          <a href="javascript:void(0)">Review ▼</a>
+          <ul class="dropdown-content" *ngIf="isReviewDropdownOpen">
+            <li><a routerLink="/review/add" routerLinkActive="active">➕ Add Review</a></li>
+            <li><a routerLink="/review/get" routerLinkActive="active">📥 Get Reviews</a></li>
+          </ul>
+        </li>
+      </div>
+
     </div>
-    <li><a routerLink="home" routerLinkActive="active">Home</a></li>
-    <li><a routerLink="add-book" routerLinkActive="active">Add Book</a></li>
-    <li><a routerLink="book-list" routerLinkActive="active">Book List</a></li>
-    <li><a routerLink="/search" class="nav-link">Search Book</a></li>
-    <li class="dropdown" (click)="toggleReviewDropdown()" [class.open]="isReviewDropdownOpen">
-      <a href="javascript:void(0)">Review ▼</a>
-      <ul class="dropdown-content" *ngIf="isReviewDropdownOpen">
-        <li><a routerLink="/review/add" routerLinkActive="active">➕ Add Review</a></li>
-        <li><a routerLink="/review/get" routerLinkActive="active">📥 Get Reviews</a></li>
-      </ul>
-    </li>
   </ul>
   <router-outlet></router-outlet>
 </nav>
+
 <footer class="footer">  
   <p>&copy; 2025 Book Store App. All rights reserved.</p>
 </footer>

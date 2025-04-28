@@ -10,13 +10,18 @@ import { RouterLink, RouterOutlet } from '@angular/router';
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
+
 export class AppComponent {
   title = 'book-app';
 
   isReviewDropdownOpen = false;
+  isMobileMenuOpen = false; // ✅ Add this
 
   toggleReviewDropdown() {
     this.isReviewDropdownOpen = !this.isReviewDropdownOpen;
   }
-  
+
+  toggleMobileMenu() {   // ✅ Add this
+    this.isMobileMenuOpen = !this.isMobileMenuOpen;
+  }
 }
