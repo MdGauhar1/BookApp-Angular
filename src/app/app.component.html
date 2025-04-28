@@ -6,6 +6,14 @@
         <img src="assets/e.png" alt="Logo" />
       </div>
 
+      <input
+      type="text"
+      [(ngModel)]="searchQuery"
+      placeholder="Search for books by title"
+      (keydown.enter)="searchBooks()"
+    />
+    <button (click)="searchBooks()">Search</button>
+
       <!-- Hamburger Icon -->
       <div class="hamburger" (click)="toggleMobileMenu()">☰</div>
 
@@ -29,7 +37,6 @@
   </ul>
   <router-outlet></router-outlet>
 </nav>
-
 <footer class="footer">  
   <p>&copy; 2025 Book Store App. All rights reserved.</p>
 </footer>

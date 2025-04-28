@@ -5,6 +5,7 @@ import { HomeComponent } from "./home/home.component";
 import { SearchComponent } from "./search/search.component";
 import { AddReviewComponent } from "./review/add-review/add-review.component";
 import { GetReviewComponent } from "./review/get-review/get-review.component";
+import { SearchResultComponent } from "./search/search-result.component";
 
 
 export const routes: Routes = [
@@ -25,14 +26,21 @@ export const routes: Routes = [
         component: HomeComponent
     },
 
-    { path: 'search',
-         component: SearchComponent
+    {   path: 'search',
+        component: SearchComponent
     },
-    { path: 'review/add', 
+    {   path: 'review/add', 
         component: AddReviewComponent 
     },
-    { path: 'review/get', 
+    {   path: 'review/get', 
         component: GetReviewComponent 
+    },
+    { 
+        path: 'search-results', 
+        component: SearchResultComponent
+    },
+    { 
+        path: '', redirectTo: 'home', pathMatch: 'full' 
     },
 ]
 
