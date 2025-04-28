@@ -1,18 +1,21 @@
 <nav class="container" style="background-image: url(assets/o.jpg);">
   <ul class="navbar">
     <div class="navbar-wrapper">
-
       <div class="logo">
         <img src="assets/e.png" alt="Logo" />
       </div>
 
-      <input
-      type="text"
-      [(ngModel)]="searchQuery"
-      placeholder="Search for books by title"
-      (keydown.enter)="searchBooks()"
-    />
-    <button (click)="searchBooks()">Search</button>
+      <div class="search-container">
+        <input
+          type="text"
+          [(ngModel)]="searchQuery"
+          placeholder="Search for books online"
+          (keydown.enter)="searchBooks()"
+          class="search-input"
+        />
+        <button (click)="searchBooks()" class="search-button">Search</button>
+      </div>
+      
 
       <!-- Hamburger Icon -->
       <div class="hamburger" (click)="toggleMobileMenu()">☰</div>

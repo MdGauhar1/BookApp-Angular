@@ -1,6 +1,6 @@
 <h2>Search Results</h2>
 
-<div *ngIf="books.length > 0; else noResults">
+<div *ngIf="books.length > 0; else noResults" class="search-results-container">
   <div *ngFor="let book of books" class="book-card">
     <h3>{{ book.title }}</h3>
     <p>{{ book.author_name?.join(', ') }}</p>
@@ -11,5 +11,5 @@
 </div>
 
 <ng-template #noResults>
-  <p>No books found.</p>
+  <p class="no-results">No books found.</p>
 </ng-template>

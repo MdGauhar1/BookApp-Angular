@@ -24,19 +24,19 @@ export class AppComponent {
   constructor(private bookService: BookService,  private router: Router) {}
 
   isReviewDropdownOpen = false;
-  isMobileMenuOpen = false; // ✅ Add this
+  isMobileMenuOpen = false;
 
   toggleReviewDropdown() {
     this.isReviewDropdownOpen = !this.isReviewDropdownOpen;
   }
 
-  toggleMobileMenu() {   // ✅ Add this
+  toggleMobileMenu() {  
     this.isMobileMenuOpen = !this.isMobileMenuOpen;
   }
 
   searchBooks() {
     if (this.searchQuery.trim() !== '') {
-      this.router.navigate(['/search-results'], { queryParams: { q: this.searchQuery } }); // ✅ navigate
+      this.router.navigate(['/search-results'], { queryParams: { q: this.searchQuery } });
     }
   }
 }
