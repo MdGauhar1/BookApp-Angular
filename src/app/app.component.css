@@ -46,7 +46,6 @@ html, body {
 .nav-links {
   display: flex;
   align-items: center;
-  gap: 20px;
 }
 
 .navbar li a {
